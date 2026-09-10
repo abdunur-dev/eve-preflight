@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bronze: #c28b5b;
+  --bronze-light: #e0a96d;
+  --bronze-dark: #8d5833;
+  --bronze-dim: rgba(194, 139, 91, 0.15);
+  --bronze-border: rgba(194, 139, 91, 0.3);
+}
+
+body {
+  background-color: #000000;
+  color: #ededed;
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle dot grid pattern like fx.sh / vercel.com */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Subtle bronze grid accent */
+.bg-grid-bronze {
+  background-image: radial-gradient(rgba(194, 139, 91, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
