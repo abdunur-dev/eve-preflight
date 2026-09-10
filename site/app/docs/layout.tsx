@@ -42,16 +42,7 @@ export default function DocsLayout({
       <header className="sticky top-0 z-30 border-b border-white/10 bg-black/90 backdrop-blur-md px-4 sm:px-8 h-14 flex items-center justify-between">
         <div className="flex items-center gap-2.5 sm:gap-3">
           <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <svg
-              width="17"
-              height="15"
-              viewBox="0 0 115 100"
-              fill="none"
-              className="text-white shrink-0"
-            >
-              <path d="M57.5 0L115 100H0L57.5 0Z" fill="currentColor" />
-            </svg>
-            <span className="text-zinc-600 font-normal">/</span>
+            <span className="w-2 h-2 rounded-full bg-[#c28b5b] shrink-0" />
             <span className="font-bold text-xs sm:text-sm tracking-tight text-white whitespace-nowrap">
               eve-preflight
             </span>

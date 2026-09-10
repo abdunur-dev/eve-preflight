@@ -116,18 +116,9 @@ export default function Home() {
       {/* Top Header / Nav */}
       <header className="relative z-30 border-b border-white/10 bg-black/90 backdrop-blur-md px-4 sm:px-8 h-14 flex items-center justify-between">
         <div className="flex items-center gap-2.5 sm:gap-3">
-          {/* Vercel Triangle Logo */}
+          {/* Logo */}
           <Link href="/" className="inline-flex items-center gap-2 group text-white">
-            <svg
-              width="17"
-              height="15"
-              viewBox="0 0 115 100"
-              fill="none"
-              className="text-white transition-transform group-hover:scale-105 shrink-0"
-            >
-              <path d="M57.5 0L115 100H0L57.5 0Z" fill="currentColor" />
-            </svg>
-            <span className="text-zinc-600 font-normal select-none">/</span>
+            <span className="w-2 h-2 rounded-full bg-[#c28b5b] group-hover:scale-125 transition-transform shrink-0" />
             <span className="font-bold text-xs sm:text-sm tracking-tight text-white whitespace-nowrap">
               eve-preflight
             </span>
