@@ -1,0 +1,34 @@
+{
+  "name": "eve-preflight",
+  "version": "0.1.0",
+  "description": "Preflight diagnostic proxy and route auditor for Vercel Eve agents.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "eve-preflight": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "eve",
+    "vercel",
+    "ai-agents",
+    "debugging",
+    "diagnostics",
+    "webhooks"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "typescript": "^7.0.2"
+  }
+}
