@@ -515,10 +515,12 @@ export default function Home() {
               <div className="bg-black/80 p-3 rounded font-mono text-[11px] text-zinc-300 space-y-1.5 border border-zinc-900 min-h-[140px] sm:min-h-[160px] overflow-x-auto">
                 <div className="text-white font-semibold break-all">▶ POST /api/slack/events</div>
                 <div className="text-red-400 font-medium">✖ Request did NOT match any Eve channel!</div>
-                <div className="text-[#e0a96d]">Registered channels:</div>
-                <div className="text-zinc-300">  - /api/channels/web</div>
-                <div className="text-zinc-300">  - /api/channels/slack</div>
-                <div className="text-zinc-400 pt-1">Suggestion: Target /api/channels/slack</div>
+                <div className="text-[#e0a96d]">Registered channels include:</div>
+                <div className="text-zinc-300">  - /webhook/inbound</div>
+                <div className="text-zinc-300">  - /eve/v1/slack</div>
+                <div className="text-zinc-300">  - /eve/v1/session</div>
+                <div className="text-zinc-500">  (+ more internal eve/v1 routes)</div>
+                <div className="text-zinc-400 pt-1">Suggestion: Did you mean /eve/v1/slack?</div>
               </div>
               <p className="text-[11px] sm:text-xs text-zinc-400 leading-normal">
                 Immediate visibility in the proxy terminal. You spot and fix the path disparity in seconds.
